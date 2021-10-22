@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1,
+h4,
+h6 {
+  font-weight: 100 !important;
+}
+p {
+  font-size: 0.6rem;
+}
+.navigation {
+  width: 90%;
+  margin: 2rem auto;
+}
+.nav-bar {
+  background-color: #efefef;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 1px 5px 0px #9b9b9b;
+}
+.logo {
+  width: 8rem;
+  margin-left: 2rem;
+}
+.logo img {
+  width: 100%;
+}
+.fa-arrow-left,
+.fa-times {
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+  color: #bababa;
+  cursor: pointer;
+}
+.main-part {
+  max-width: 980px;
+  width: 90%;
+  margin: 5rem auto;
+}
+.content {
+  text-align: center;
+  color: #bababa;
+}
+.portfolio-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+  justify-content: space-between;
+  margin: 2rem 0;
+  align-items: center;
+  color: #4c4c4c;
+  gap: 1rem;
+}
+.icons {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+}
+.fa-rupee-sign,
+.fa-calendar-alt {
+  color: #bababa;
+  font-size: 2rem;
+  font-weight: 100 !important;
+}
+.rupee i {
+  font-size: 1rem !important;
+  padding: 0.5rem;
+  border: 1px solid #bababa;
+  border-radius: 50%;
+}
+.invesment {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.invesment-details {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 1rem;
+  color: #bababa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.details {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: 5px solid #14a388;
+  border-right: 1px solid #ccc;
+}
+.del-item,
+.del-item-2,
+.del-item-3 {
+  padding: 0.5rem;
+}
+.sub-item {
+  display: grid;
+  grid-template-columns: auto 35% 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.dot,
+.dot-2,
+.dot-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.dot,
+.amount h1 {
+  background-color: #14a388;
+}
+.dot-2,
+.amount-2 h1 {
+  background-color: #13bc9c;
+}
+.dot-3,
+.amount-3 h1 {
+  background-color: #425b77;
+}
+.color-1 {
+  border: 2px solid #14a388;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+.color-2 {
+  border: 2px solid #13bc9c;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+.color-3 {
+  border: 2px solid #425b77;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+.amount h1,
+.amount-2 h1,
+.amount-3 h1 {
+  width: 80px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.str-btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #12d6b0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.last-item {
+  display: flex;
+  justify-content: space-between;
+}
+.para {
+  display: flex;
+  justify-content: end;
+  margin-top: -0.5rem;
+  margin-right: 1rem;
+  color: #bababa;
+}
+.para p {
+  font-size: 0.5rem;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.circle:before {
+  content: '';
+  width: 47.3%;
+  height: 100%;
+  border: 10px solid #13bc9c;
+  border-radius: 100px 0 0 100px;
+  position: absolute;
+  left: -10px;
+  background: transparent;
+}
+.circle:after {
+  content: '';
+  width: 47.3%;
+  height: 100%;
+  border: 10px solid #425b77;
+  border-radius: 0 100px 100px 0px;
+  position: absolute;
+  right: -10px;
+  background: transparent;
+}
+.progress {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  flex-direction: column;
+}
+.progress > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+h1.equity {
+  margin-top: 0.75rem;
+}
+.debt {
+  color: #13bc9c;
+}
+.equity {
+  color: #425b77;
+}
+.aditya {
+  color: #bababa;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 0.5rem !important;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+  .fa-arrow-left,
+  .fa-times {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 6rem;
+    margin-left: 1rem;
+  }
+  .nav-bar {
+    padding: 0.5rem 1rem;
+  }
+  .fa-rupee-sign,
+  .fa-calendar-alt {
+    font-size: 1rem;
+  }
+  .rupee i {
+    font-size: 0.5rem !important;
+    padding: 0.2rem;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .invesment {
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+
+  .invesment .circle {
+    margin: 0 auto;
+  }
+  .sub-item {
+    margin-top: 0.75rem;
+  }
+  .aditya {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.65rem;
+  }
+}
